@@ -349,39 +349,6 @@
 										<si:distributionXMLList>normal</si:distributionXMLList>
 									</si:expandedUncXMLList>
 								</si:realListXMLList>
-								<dcc:measurementMetaData>
-									<dcc:metaData refType="basic_conformity">
-										<dcc:declaration>
-											<dcc:name>
-												<dcc:content lang="de">Konformität</dcc:content>
-												<dcc:content lang="en">Conformity</dcc:content>
-											</dcc:name>
-										</dcc:declaration>
-										<dcc:conformityXMLList>pass</dcc:conformityXMLList>
-										<dcc:data>
-											<dcc:quantity refType="basic_acceptanceLimitLower">
-												<dcc:name>
-													<dcc:content lang="de">Unteres Akzeptanzlimit</dcc:content>
-													<dcc:content lang="en">Lower acceptance limit</dcc:content>
-												</dcc:name>
-												<si:realListXMLList>
-													<si:valueXMLList>-0.23 -0.23 -0.23 -0.30 -0.30</si:valueXMLList>
-													<si:unitXMLList>\kelvin</si:unitXMLList>
-												</si:realListXMLList>
-											</dcc:quantity>
-											<dcc:quantity refType="basic_acceptanceLimitUpper">
-												<dcc:name>
-													<dcc:content lang="de">Oberes Akzeptanzlimit</dcc:content>
-													<dcc:content lang="en">Upper acceptance limit</dcc:content>
-												</dcc:name>
-												<si:realListXMLList>
-													<si:valueXMLList>0.23 0.23 0.23 0.30 0.30</si:valueXMLList>
-													<si:unitXMLList>\kelvin</si:unitXMLList>
-												</si:realListXMLList>
-											</dcc:quantity>
-										</dcc:data>
-									</dcc:metaData>
-								</dcc:measurementMetaData>
 							</dcc:quantity>
 						</dcc:list>
 					</dcc:data>
