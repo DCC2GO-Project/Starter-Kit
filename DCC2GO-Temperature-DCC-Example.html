@@ -1,0 +1,407 @@
+<html xmlns:dcc="https://ptb.de/dcc" xmlns:si="https://ptb.de/si"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.flex {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.cell {
+  padding: 10px;
+  border: 1px black solid;
+  margin:-1px 0 0 -1px;
+  white-space: nowrap;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #FFC107;
+
+  border-radius: 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.w-100 {
+  width: 100%
+}
+
+.mb-default {
+  margin-bottom: 10px !important;
+}
+
+.mt-default {
+  margin-top: 10px !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+.heading {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.top-heading {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+
+
+.administrative-data-table tr td {
+  vertical-align: top;
+}
+
+.administrative-data-table tr td:first-child {
+  width: 200px;
+}
+
+.administrative-data-table tr td:first-child p:nth-child(2), .td-translated p:nth-child(2) {
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.p-row-bottom td {
+  padding-bottom: 10px;
+}
+
+.v-align-bottom {
+  vertical-align: bottom !important;
+}
+
+.description {
+  white-space: pre-line;
+  margin-bottom: 0;
+}
+
+.description-secondary {
+  font-style: italic;
+  font-size: 8pt;
+  margin-bottom: 0;
+}
+
+.dcc-table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.dcc-table, .dcc-table th, .dcc-table td {
+  border-collapse: collapse;
+  border: 1px black solid;
+}
+
+.dcc-table thead td {
+  padding: 0;
+}
+
+.dcc-table tbody td {
+  padding: 10px;
+}
+
+.page-break {
+  margin-bottom: 2rem;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+}
+
+@media print {
+  .page-break {
+    margin-bottom: 0;
+    clear: both;
+    page-break-after: always;
+  }
+}
+
+#rotate-text {
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script type="text/javascript" src="xslt-dcc/js/verticalTableHeaders.js"></script><script type="text/javascript" src="xslt-dcc/js/siunit2mathml.js"></script><script type="text/javascript">
+                    MathJax = {
+                    tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    processEscapes: true
+                    }
+                    };
+                    
+                    window.addEventListener('load', function() {
+                    els = document.getElementsByClassName("si-unit");
+                    Array.from(els).forEach((si) => {si.innerHTML = convertSiUnitToMathMl(si.innerHTML).join('');});
+                    transformToVerticalTableHeaders("table.dcc-table-vertical");
+                    });
+                </script><script type="text/javascript" src="xslt-dcc/js/tex-mml-chtml.js"></script>
+</head>
+<body><div class="w-100">
+<div class="text-left"><p class="heading">Digital Calibration Certificate</p></div>
+<table class="administrative-data-table">
+<tbody><tr class="p-row-bottom"><td><p class="top-heading">Administrative Data</p></td></tr>
+<tr><td><p class="sub-heading">DCC Software</p></td></tr>
+<tr>
+<td><p class="text-primary">• Software</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p class="text-primary">Name</p></td>
+<td><p>
+          GEMIMEG tool
+        </p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Release</p></td>
+<td><p>v1.3.0</p></td>
+</tr>
+<tr></tr>
+<tr><td><p class="sub-heading">Core Data</p></td></tr>
+<tr>
+<td><p class="text-primary">Country Code ISO3166_1</p></td>
+<td><p>GB</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Used Language Code ISO639_1</p></td>
+<td><p>en</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Mandatory Language Code ISO639_1</p></td>
+<td><p>en</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Unique Identifier</p></td>
+<td><p>DCC2GO-Temperature-DCC-Example</p></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td><p class="text-primary">Issuer</p></td>
+<td><p>calibrationLaboratory</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Order no.</p></td>
+<td><p>2023/04/0001</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Performance Date</p></td>
+<td><p>2023-04-13 to 2023-04-14</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Performance Location</p></td>
+<td><p>laboratory</p></td>
+</tr>
+<tr class="p-row-bottom"><td><p class="sub-heading">Items</p></td></tr>
+<tr>
+<td><p class="text-primary">
+                                • Item
+                            </p></td>
+<td><p class="text-primary">Temperature sensor</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Manufacturer</p></td>
+<td><p class="text-default">Sensor-Manufacturer</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Model</p></td>
+<td><p>PT100</p></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td><p class="text-primary">Issuer</p></td>
+<td><p>manufacturer</p></td>
+</tr>
+<tr>
+<td><p class="text-primary">Serial no.</p></td>
+<td><p>2309823482</p></td>
+</tr>
+<tr class="p-row-bottom"><td><p class="sub-heading">Calibration Laboratory</p></td></tr>
+<tr class="p-row-bottom">
+<td></td>
+<td><p class="text-default">EMPIR-DCC2GO</p></td>
+</tr>
+<tr class="p-row-bottom">
+<td><p class="text-primary">E-Mail</p></td>
+<td><p>dcc2go@ptb.de</p></td>
+</tr>
+<tr>
+<td><p>City</p></td>
+<td><p>Capital City</p></td>
+</tr>
+<tr>
+<td><p>Post Code</p></td>
+<td><p>12345</p></td>
+</tr>
+<tr>
+<td><p>Street</p></td>
+<td><p>High Street</p></td>
+</tr>
+<tr>
+<td><p>Street No.</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="p-row-bottom"><td></td></tr>
+<tr>
+<td><p>Further</p></td>
+<td><p></p><p class="text-default">https://www.ptb.de/dcc2go/project</p><p></p></td>
+</tr>
+<tr>
+<td class="v-align-bottom"><p class="sub-heading">Person(s) authorizing the report</p></td>
+<td></td>
+</tr>
+<tr>
+<td class="v-align-bottom"></td>
+<td class="v-align-bottom">Name</td>
+<td class="v-align-bottom"><p class="text-default">Jane Bloggs</p></td>
+</tr>
+<tr>
+<td class="v-align-bottom"></td>
+<td class="v-align-bottom"><p class="text-primary">Main signer</p></td>
+<td><p>true</p></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr class="p-row-bottom">
+<td><p class="sub-heading">Customer</p></td>
+<td><p></p><p class="text-default">Example Company</p><p></p></td>
+</tr>
+<tr class="p-row-bottom">
+<td><p class="text-primary">E-Mail</p></td>
+<td><p>info@customer.xx</p></td>
+</tr>
+<tr>
+<td><p>City</p></td>
+<td><p>Capital City</p></td>
+</tr>
+<tr>
+<td><p>Post Code</p></td>
+<td><p>789101</p></td>
+</tr>
+</tbody></table>
+<br/>
+<br/>
+<br/>
+<div class="mb-default">
+<p class="sub-heading">Statements</p>
+<p class="text-primary">
+                                • Statement
+                            </p>
+<p></p><p class="text-primary">This certificate is consistent with the Calibration and Measurement Capabilities (CMCs) that are included in Appendix C of the Mutual Recognition Arrangement (MRA) drawn up by the International Committee for Weights and Measures (CIPM). Under the MRA, all participating institutes recognize the validity of each other’s calibration and measurement certificates for the quantities, ranges and measurement uncertainties specified in Appendix C (for details, see http://www.bipm.org).</p><p></p>
+<p></p>
+<br>
+</div>
+<p class="top-heading">Measurement Results</p>
+<div class="measurementResult">
+<p></p><div class="avoid-break mb-default"><p class="sub-heading">Measurement results</p></div><p></p>
+<p class="sub-heading">
+                        Used Methods
+                    </p>
+<p class="text-primary">
+                        • Used method
+                    </p>
+<p class="text-primary">Calibration of temperature sensors</p>
+<div class="flex mb-default avoid-break"></div>
+<div class="flex mb-default avoid-break"></div>
+<p class="sub-heading">
+                        Measuring Equipments
+                    </p>
+<p class="text-primary">
+                        • Measuring Equipment
+                    </p>Pt 100 thermometer<p class="description-secondary"></p>
+<p>Issuer (Identification): manufacturer</p>
+<p>Value (Identification): reference-PT100-002</p>
+<br><p class="sub-heading">
+                        Results
+                    </p>
+<div class="result avoid-break">
+<div><div class="avoid-break mb-default"><p class="sub-heading">Measuring results</p></div></div>
+<div>
+              <div class="flex mb-default avoid-break"><div class="col">
+<div class="cell">Reference value<p class="description-secondary"></p>\degreecelsius</div>
+<div class="cell">33.098</div>
+<div class="cell">99.971</div>
+<div class="cell">175.103</div>
+<div class="cell">250.169</div>
+<div class="cell">320.004</div>
+</div></div>
+<div class="flex mb-default  avoid-break"><div class="flex mb-default avoid-break"></div></div>
+              <div class="flex mb-default avoid-break"><div class="col">
+<div class="cell">Indicated measured value probe<p class="description-secondary"></p>\degreecelsius</div>
+<div class="cell">33.17</div>
+<div class="cell">100.06</div>
+<div class="cell">175.21</div>
+<div class="cell">250.16</div>
+<div class="cell">319.92</div>
+</div></div>
+<div class="flex mb-default  avoid-break"><div class="flex mb-default avoid-break"></div></div>
+              <div class="flex mb-default avoid-break"><div class="col">
+<div class="cell">Measurement error<p class="description-secondary"></p>\kelvin</div>
+<div class="cell">0.072</div>
+<div class="cell">0.089</div>
+<div class="cell">0.107</div>
+<div class="cell">-0.009</div>
+<div class="cell">-0.084</div>
+</div></div>
+<div class="flex mb-default  avoid-break"><div class="flex mb-default avoid-break">
+<div class="col">
+<div class="cell">
+<p>Uncertainty List</p>\kelvin</div>
+<div class="cell">0.061</div>
+</div>
+<div class="col">
+<div class="cell">
+<p>Coverage Factor List</p>
+<br>
+</div>
+<div class="cell">2</div>
+</div>
+<div class="col">
+<div class="cell">
+<p>Coverage Probability List</p>
+<br>
+</div>
+<div class="cell">0.95</div>
+</div>
+<div class="col">
+<div class="cell">
+<p>Distribution List</p>
+<br>
+</div>
+<div class="cell">normal</div>
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</body></html>
