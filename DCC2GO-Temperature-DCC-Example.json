@@ -1,0 +1,230 @@
+{
+	"dcc:digitalCalibrationCertificate":
+
+	{
+	  "@xmlns:dcc": "https://ptb.de/dcc",
+	  "@xmlns:si": "https://ptb.de/si",
+	  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+	  "@xsi:schemaLocation": "https://ptb.de/dcc https://ptb.de/dcc/v3.2.0/dcc.xsd",
+	  "@dcc:schemaVersion": "3.2.0",	
+		
+	  "comment": "EMPIR DCC2GO Example, Copyright (c) 2022 - 2023 DCC2GO project members, https://www.ptb.de/dcc2go/project, contact dcc2go@ptb.de, DOI ...",
+	  "comment": "This XML file is free data: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution 4.0 International License as published by the Creative Commons Corporation.",
+	  "comment": "This XML is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+	  "comment": "You should have received a copy of the Commons Attribution 4.0 International License along with this XML.  If not, see https://creativecommons.org/licenses/by/4.0/.",
+  
+	  "dcc:administrativeData": {
+		"dcc:dccSoftware": {
+		  "dcc:software": {
+			"dcc:name": {
+			  "dcc:content": "GEMIMEG tool"
+			},
+			"dcc:release": "v1.3.0"
+		  }
+		},
+		"dcc:coreData": {
+		  "dcc:countryCodeISO3166_1": "GB",
+		  "dcc:usedLangCodeISO639_1": "en",
+		  "dcc:mandatoryLangCodeISO639_1": "en",
+		  "dcc:uniqueIdentifier": "DCC2GO-Temperature-DCC-Example",
+		  "dcc:identifications": {
+			"dcc:identification": {
+			  "dcc:issuer": "calibrationLaboratory",
+			  "dcc:value": "2023/04/0001",
+			  "dcc:name": {
+				"dcc:content": {
+				  "@dcc:lang": "en",
+				  "#text": "Order no."
+				}
+			  }
+			}
+		  },
+		  "dcc:beginPerformanceDate": "2023-04-13",
+		  "dcc:endPerformanceDate": "2023-04-14",
+		  "dcc:performanceLocation": "laboratory"
+		},
+		"dcc:items": {
+		  "dcc:item": {
+			"dcc:name": {
+			  "dcc:content": {
+				"@dcc:lang": "en",
+				"#text": "Temperature sensor"
+			  }
+			},
+			"dcc:manufacturer": {
+			  "dcc:name": {
+				"dcc:content": "Sensor-Manufacturer"
+			  }
+			},
+			"dcc:model": "PT100",
+			"dcc:identifications": {
+			  "dcc:identification": {
+				"dcc:issuer": "manufacturer",
+				"dcc:value": "2309823482",
+				"dcc:name": {
+				  "dcc:content": {
+					"@dcc:lang": "en",
+					"#text": "Serial no."
+				  }
+				}
+			  }
+			}
+		  }
+		},
+		"dcc:calibrationLaboratory": {
+		  "dcc:contact": {
+			"dcc:name": {
+			  "dcc:content": "EMPIR-DCC2GO"
+			},
+			"dcc:eMail": "dcc2go@ptb.de",
+			"dcc:location": {
+			  "dcc:city": "Capital City",
+			  "dcc:postCode": "12345",
+			  "dcc:street": "High Street",
+			  "dcc:streetNo": "1",
+			  "dcc:further": {
+				"dcc:content": "https://www.ptb.de/dcc2go/project"
+			  }
+			}
+		  }
+		},
+		"dcc:respPersons": {
+		  "dcc:respPerson": {
+			"dcc:person": {
+			  "dcc:name": {
+				"dcc:content": "Jane Bloggs"
+			  }
+			},
+			"dcc:mainSigner": "true"
+		  }
+		},
+		"dcc:customer": {
+		  "dcc:name": {
+			"dcc:content": "Example Company"
+		  },
+		  "dcc:eMail": "info@customer.xx",
+		  "dcc:location": {
+			"dcc:city": "Capital City",
+			"dcc:postCode": "789101"
+		  }
+		},
+		"dcc:statements": {
+		  "dcc:statement": {
+			"@dcc:refType": "basic_cipmMRA",
+			"dcc:declaration": {
+			  "dcc:content": {
+				"@dcc:lang": "en",
+				"#text": "This certificate is consistent with the Calibration and Measurement Capabilities (CMCs) that are included in Appendix C of the Mutual Recognition Arrangement (MRA) drawn up by the International Committee for Weights and Measures (CIPM). Under the MRA, all participating institutes recognize the validity of each other’s calibration and measurement certificates for the quantities, ranges and measurement uncertainties specified in Appendix C (for details, see http://www.bipm.org)."
+			  }
+			}
+		  }
+		}
+	  },
+	  "dcc:measurementResults": {
+		"dcc:measurementResult": {
+		  "dcc:name": {
+			"dcc:content": {
+			  "@dcc:lang": "en",
+			  "#text": "Measurement results"
+			}
+		  },
+		  "dcc:usedMethods": {
+			"dcc:usedMethod": {
+			  "@dcc:refType": "gp_temperatureSensor",
+			  "dcc:name": {
+				"dcc:content": {
+				  "@dcc:lang": "en",
+				  "#text": "Calibration of temperature sensors"
+				}
+			  }
+			}
+		  },
+		  "dcc:measuringEquipments": {
+			"dcc:measuringEquipment": {
+			  "@dcc:refType": "basic_normalUsed",
+			  "dcc:name": {
+				"dcc:content": {
+				  "@dcc:lang": "en",
+				  "#text": "Pt 100 thermometer"
+				}
+			  },
+			  "dcc:identifications": {
+				"dcc:identification": {
+				  "dcc:issuer": "manufacturer",
+				  "dcc:value": "reference-PT100-002"
+				}
+			  }
+			}
+		  },
+		  "dcc:results": {
+			"dcc:result": {
+			  "@dcc:refType": "dcc2go_exampleMeasuringResult",
+			  "dcc:name": {
+				"dcc:content": {
+				  "@dcc:lang": "en",
+				  "#text": "Measuring results"
+				}
+			  },
+			  "dcc:data": {
+				"dcc:list": {
+				  "@dcc:refType": "dcc2go_exampleTable",
+				  "dcc:quantity": [
+					{
+					  "@dcc:refType": "basic_referenceValue",
+					  "dcc:name": {
+						"dcc:content": {
+						  "@dcc:lang": "en",
+						  "#text": "Reference value"
+						}
+					  },
+					  "si:realListXMLList": {
+						"si:valueXMLList": "33.098 99.971 175.103 250.169 320.004",
+						"si:unitXMLList": "\\degreecelsius"
+					  }
+					},
+					{
+					  "@dcc:refType": "basic_measuredValue",
+					  "dcc:name": {
+						"dcc:content": {
+						  "@dcc:lang": "en",
+						  "#text": "Indicated measured value probe"
+						}
+					  },
+					  "si:realListXMLList": {
+						"si:valueXMLList": "33.17 100.06 175.21 250.16 319.92",
+						"si:unitXMLList": "\\degreecelsius"
+					  }
+					},
+					{
+					  "@dcc:refType": "basic_measurementError",
+					  "dcc:name": {
+						"dcc:content": {
+						  "@dcc:lang": "en",
+						  "#text": "Measurement error"
+						}
+					  },
+					  "si:realListXMLList": {
+						"si:valueXMLList": "0.072 0.089 0.107 -0.009 -0.084",
+						"si:unitXMLList": "\\kelvin",
+						"si:expandedUncXMLList": {
+						  "si:uncertaintyXMLList": "0.061",
+						  "si:coverageFactorXMLList": "2",
+						  "si:coverageProbabilityXMLList": "0.95",
+						  "si:distributionXMLList": "normal"
+						}
+					  }
+					}
+				  ]
+				}
+			  }
+			}
+		  }
+		}
+	  },
+	  "dcc:document": {
+		"dcc:fileName": "human_readable.html",
+		"dcc:mimeType": "text/html",
+		"dcc:dataBase64": "PGh0bWwgeG1sbnM6ZGNjPSJodHRwczovL3B0Yi5kZS9kY2MiIHhtbG5zOnNpPSJodHRwczovL3B0Yi5kZS9zaSI+PGhlYWQ+CjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04Ij4KPHN0eWxlPi5mbGV4IHsKICBkaXNwbGF5OiBmbGV4Owp9CgouY29sIHsKICBmbGV4OiAxOwp9CgouY2VsbCB7CiAgcGFkZGluZzogMTBweDsKICBib3JkZXI6IDFweCBibGFjayBzb2xpZDsKICBtYXJnaW46LTFweCAwIDAgLTFweDsKICB3aGl0ZS1zcGFjZTogbm93cmFwOwp9CgouYWxlcnQgewogIHBhZGRpbmc6IDEwcHg7CiAgbWFyZ2luLWJvdHRvbTogMTBweDsKCiAgY29sb3I6IHdoaXRlOwogIGJhY2tncm91bmQtY29sb3I6ICNGRkMxMDc7CgogIGJvcmRlci1yYWRpdXM6IDVweDsKfQoKYm9keSB7CiAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7Cn0KCi53LTEwMCB7CiAgd2lkdGg6IDEwMCUKfQoKLm1iLWRlZmF1bHQgewogIG1hcmdpbi1ib3R0b206IDEwcHggIWltcG9ydGFudDsKfQoKLm10LWRlZmF1bHQgewogIG1hcmdpbi10b3A6IDEwcHggIWltcG9ydGFudDsKfQoKLnRleHQtY2VudGVyIHsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCi50ZXh0LWl0YWxpYyB7CiAgZm9udC1zdHlsZTogaXRhbGljOwp9CgoudGV4dC1ib2xkIHsKICBmb250LXdlaWdodDogYm9sZDsKfQoKcCB7CiAgbWFyZ2luOiAwOwp9CgouaGVhZGluZyB7CiAgZm9udC1zaXplOiAyMHB0OwogIGZvbnQtd2VpZ2h0OiBib2xkOwp9Cgouc3ViLWhlYWRpbmcgewogIGZvbnQtc2l6ZTogMTJwdDsKICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvcC1oZWFkaW5nIHsKICBmb250LXNpemU6IDE4cHQ7CiAgZm9udC13ZWlnaHQ6IGJvbGQ7Cn0KCgoKLmFkbWluaXN0cmF0aXZlLWRhdGEtdGFibGUgdHIgdGQgewogIHZlcnRpY2FsLWFsaWduOiB0b3A7Cn0KCi5hZG1pbmlzdHJhdGl2ZS1kYXRhLXRhYmxlIHRyIHRkOmZpcnN0LWNoaWxkIHsKICB3aWR0aDogMjAwcHg7Cn0KCi5hZG1pbmlzdHJhdGl2ZS1kYXRhLXRhYmxlIHRyIHRkOmZpcnN0LWNoaWxkIHA6bnRoLWNoaWxkKDIpLCAudGQtdHJhbnNsYXRlZCBwOm50aC1jaGlsZCgyKSB7CiAgZm9udC1zdHlsZTogaXRhbGljOwogIGZvbnQtc2l6ZTogOHB0Owp9CgoucC1yb3ctYm90dG9tIHRkIHsKICBwYWRkaW5nLWJvdHRvbTogMTBweDsKfQoKLnYtYWxpZ24tYm90dG9tIHsKICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tICFpbXBvcnRhbnQ7Cn0KCi5kZXNjcmlwdGlvbiB7CiAgd2hpdGUtc3BhY2U6IHByZS1saW5lOwogIG1hcmdpbi1ib3R0b206IDA7Cn0KCi5kZXNjcmlwdGlvbi1zZWNvbmRhcnkgewogIGZvbnQtc3R5bGU6IGl0YWxpYzsKICBmb250LXNpemU6IDhwdDsKICBtYXJnaW4tYm90dG9tOiAwOwp9CgouZGNjLXRhYmxlIHsKICBkaXNwbGF5OiBibG9jazsKICBvdmVyZmxvdzogYXV0bzsKICB3aWR0aDogMTAwJTsKfQoKLmRjYy10YWJsZSwgLmRjYy10YWJsZSB0aCwgLmRjYy10YWJsZSB0ZCB7CiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKICBib3JkZXI6IDFweCBibGFjayBzb2xpZDsKfQoKLmRjYy10YWJsZSB0aGVhZCB0ZCB7CiAgcGFkZGluZzogMDsKfQoKLmRjYy10YWJsZSB0Ym9keSB0ZCB7CiAgcGFkZGluZzogMTBweDsKfQoKLnBhZ2UtYnJlYWsgewogIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi5hdm9pZC1icmVhayB7CiAgcGFnZS1icmVhay1pbnNpZGU6IGF2b2lkOwp9CgpAbWVkaWEgcHJpbnQgewogIC5wYWdlLWJyZWFrIHsKICAgIG1hcmdpbi1ib3R0b206IDA7CiAgICBjbGVhcjogYm90aDsKICAgIHBhZ2UtYnJlYWstYWZ0ZXI6IGFsd2F5czsKICB9Cn0KCiNyb3RhdGUtdGV4dCB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7CiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTsKICAgIC1vLXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTsKICAgIC1tcy10cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7CiAgICB0cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7Cn0KPC9zdHlsZT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNi4wLm1pbi5qcyI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0ieHNsdC1kY2MvanMvdmVydGljYWxUYWJsZUhlYWRlcnMuanMiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9InhzbHQtZGNjL2pzL3NpdW5pdDJtYXRobWwuanMiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KICAgICAgICAgICAgICAgICAgICBNYXRoSmF4ID0gewogICAgICAgICAgICAgICAgICAgIHRleDogewogICAgICAgICAgICAgICAgICAgIGlubGluZU1hdGg6IFtbJyQnLCAnJCddLCBbJ1xcKCcsICdcXCknXV0sCiAgICAgICAgICAgICAgICAgICAgcHJvY2Vzc0VzY2FwZXM6IHRydWUKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfTsKICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsIGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAgICAgIGVscyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlDbGFzc05hbWUoInNpLXVuaXQiKTsKICAgICAgICAgICAgICAgICAgICBBcnJheS5mcm9tKGVscykuZm9yRWFjaCgoc2kpID0+IHtzaS5pbm5lckhUTUwgPSBjb252ZXJ0U2lVbml0VG9NYXRoTWwoc2kuaW5uZXJIVE1MKS5qb2luKCcnKTt9KTsKICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm1Ub1ZlcnRpY2FsVGFibGVIZWFkZXJzKCJ0YWJsZS5kY2MtdGFibGUtdmVydGljYWwiKTsKICAgICAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgICAgIDwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9InhzbHQtZGNjL2pzL3RleC1tbWwtY2h0bWwuanMiPjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5PjxkaXYgY2xhc3M9InctMTAwIj4KPGRpdiBjbGFzcz0idGV4dC1sZWZ0Ij48cCBjbGFzcz0iaGVhZGluZyI+RGlnaXRhbCBDYWxpYnJhdGlvbiBDZXJ0aWZpY2F0ZTwvcD48L2Rpdj4KPHRhYmxlIGNsYXNzPSJhZG1pbmlzdHJhdGl2ZS1kYXRhLXRhYmxlIj4KPHRib2R5Pjx0ciBjbGFzcz0icC1yb3ctYm90dG9tIj48dGQ+PHAgY2xhc3M9InRvcC1oZWFkaW5nIj5BZG1pbmlzdHJhdGl2ZSBEYXRhPC9wPjwvdGQ+PC90cj4KPHRyPjx0ZD48cCBjbGFzcz0ic3ViLWhlYWRpbmciPkRDQyBTb2Z0d2FyZTwvcD48L3RkPjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPuKAoiBTb2Z0d2FyZTwvcD48L3RkPgo8dGQ+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+TmFtZTwvcD48L3RkPgo8dGQ+PHA+CiAgICAgICAgICBHRU1JTUVHIHRvb2wKICAgICAgICA8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+UmVsZWFzZTwvcD48L3RkPgo8dGQ+PHA+djEuMy4wPC9wPjwvdGQ+CjwvdHI+Cjx0cj48L3RyPgo8dHI+PHRkPjxwIGNsYXNzPSJzdWItaGVhZGluZyI+Q29yZSBEYXRhPC9wPjwvdGQ+PC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+Q291bnRyeSBDb2RlIElTTzMxNjZfMTwvcD48L3RkPgo8dGQ+PHA+R0I8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+VXNlZCBMYW5ndWFnZSBDb2RlIElTTzYzOV8xPC9wPjwvdGQ+Cjx0ZD48cD5lbjwvcD48L3RkPgo8L3RyPgo8dHI+Cjx0ZD48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij5NYW5kYXRvcnkgTGFuZ3VhZ2UgQ29kZSBJU082MzlfMTwvcD48L3RkPgo8dGQ+PHA+ZW48L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+VW5pcXVlIElkZW50aWZpZXI8L3A+PC90ZD4KPHRkPjxwPkRDQzJHTy1UZW1wZXJhdHVyZS1EQ0MtRXhhbXBsZTwvcD48L3RkPgo8L3RyPgo8dHI+PC90cj4KPHRyPjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPklzc3VlcjwvcD48L3RkPgo8dGQ+PHA+Y2FsaWJyYXRpb25MYWJvcmF0b3J5PC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPk9yZGVyIG5vLjwvcD48L3RkPgo8dGQ+PHA+MjAyMy8wNC8wMDAxPC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPlBlcmZvcm1hbmNlIERhdGU8L3A+PC90ZD4KPHRkPjxwPjIwMjMtMDQtMTMgdG8gMjAyMy0wNC0xNDwvcD48L3RkPgo8L3RyPgo8dHI+Cjx0ZD48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij5QZXJmb3JtYW5jZSBMb2NhdGlvbjwvcD48L3RkPgo8dGQ+PHA+bGFib3JhdG9yeTwvcD48L3RkPgo8L3RyPgo8dHIgY2xhc3M9InAtcm93LWJvdHRvbSI+PHRkPjxwIGNsYXNzPSJzdWItaGVhZGluZyI+SXRlbXM8L3A+PC90ZD48L3RyPgo8dHI+Cjx0ZD48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDigKIgSXRlbQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9wPjwvdGQ+Cjx0ZD48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij5UZW1wZXJhdHVyZSBzZW5zb3I8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+TWFudWZhY3R1cmVyPC9wPjwvdGQ+Cjx0ZD48cCBjbGFzcz0idGV4dC1kZWZhdWx0Ij5TZW5zb3ItTWFudWZhY3R1cmVyPC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPk1vZGVsPC9wPjwvdGQ+Cjx0ZD48cD5QVDEwMDwvcD48L3RkPgo8L3RyPgo8dHI+PC90cj4KPHRyPjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPklzc3VlcjwvcD48L3RkPgo8dGQ+PHA+bWFudWZhY3R1cmVyPC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPlNlcmlhbCBuby48L3A+PC90ZD4KPHRkPjxwPjIzMDk4MjM0ODI8L3A+PC90ZD4KPC90cj4KPHRyIGNsYXNzPSJwLXJvdy1ib3R0b20iPjx0ZD48cCBjbGFzcz0ic3ViLWhlYWRpbmciPkNhbGlicmF0aW9uIExhYm9yYXRvcnk8L3A+PC90ZD48L3RyPgo8dHIgY2xhc3M9InAtcm93LWJvdHRvbSI+Cjx0ZD48L3RkPgo8dGQ+PHAgY2xhc3M9InRleHQtZGVmYXVsdCI+RU1QSVItRENDMkdPPC9wPjwvdGQ+CjwvdHI+Cjx0ciBjbGFzcz0icC1yb3ctYm90dG9tIj4KPHRkPjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPkUtTWFpbDwvcD48L3RkPgo8dGQ+PHA+ZGNjMmdvQHB0Yi5kZTwvcD48L3RkPgo8L3RyPgo8dHI+Cjx0ZD48cD5DaXR5PC9wPjwvdGQ+Cjx0ZD48cD5DYXBpdGFsIENpdHk8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHA+UG9zdCBDb2RlPC9wPjwvdGQ+Cjx0ZD48cD4xMjM0NTwvcD48L3RkPgo8L3RyPgo8dHI+Cjx0ZD48cD5TdHJlZXQ8L3A+PC90ZD4KPHRkPjxwPkhpZ2ggU3RyZWV0PC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwPlN0cmVldCBOby48L3A+PC90ZD4KPHRkPjxwPjE8L3A+PC90ZD4KPC90cj4KPHRyIGNsYXNzPSJwLXJvdy1ib3R0b20iPjx0ZD48L3RkPjwvdHI+Cjx0cj4KPHRkPjxwPkZ1cnRoZXI8L3A+PC90ZD4KPHRkPjxwPjwvcD48cCBjbGFzcz0idGV4dC1kZWZhdWx0Ij5odHRwczovL3d3dy5wdGIuZGUvZGNjMmdvL3Byb2plY3Q8L3A+PHA+PC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkIGNsYXNzPSJ2LWFsaWduLWJvdHRvbSI+PHAgY2xhc3M9InN1Yi1oZWFkaW5nIj5QZXJzb24ocykgYXV0aG9yaXppbmcgdGhlIHJlcG9ydDwvcD48L3RkPgo8dGQ+PC90ZD4KPC90cj4KPHRyPgo8dGQgY2xhc3M9InYtYWxpZ24tYm90dG9tIj48L3RkPgo8dGQgY2xhc3M9InYtYWxpZ24tYm90dG9tIj5OYW1lPC90ZD4KPHRkIGNsYXNzPSJ2LWFsaWduLWJvdHRvbSI+PHAgY2xhc3M9InRleHQtZGVmYXVsdCI+SmFuZSBCbG9nZ3M8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQgY2xhc3M9InYtYWxpZ24tYm90dG9tIj48L3RkPgo8dGQgY2xhc3M9InYtYWxpZ24tYm90dG9tIj48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij5NYWluIHNpZ25lcjwvcD48L3RkPgo8dGQ+PHA+dHJ1ZTwvcD48L3RkPgo8L3RyPgo8dHI+PC90cj4KPHRyPjwvdHI+Cjx0cj48L3RyPgo8dHIgY2xhc3M9InAtcm93LWJvdHRvbSI+Cjx0ZD48cCBjbGFzcz0ic3ViLWhlYWRpbmciPkN1c3RvbWVyPC9wPjwvdGQ+Cjx0ZD48cD48L3A+PHAgY2xhc3M9InRleHQtZGVmYXVsdCI+RXhhbXBsZSBDb21wYW55PC9wPjxwPjwvcD48L3RkPgo8L3RyPgo8dHIgY2xhc3M9InAtcm93LWJvdHRvbSI+Cjx0ZD48cCBjbGFzcz0idGV4dC1wcmltYXJ5Ij5FLU1haWw8L3A+PC90ZD4KPHRkPjxwPmluZm9AY3VzdG9tZXIueHg8L3A+PC90ZD4KPC90cj4KPHRyPgo8dGQ+PHA+Q2l0eTwvcD48L3RkPgo8dGQ+PHA+Q2FwaXRhbCBDaXR5PC9wPjwvdGQ+CjwvdHI+Cjx0cj4KPHRkPjxwPlBvc3QgQ29kZTwvcD48L3RkPgo8dGQ+PHA+Nzg5MTAxPC9wPjwvdGQ+CjwvdHI+CjwvdGJvZHk+PC90YWJsZT4KPGRpdiBjbGFzcz0ibWItZGVmYXVsdCI+CjxwIGNsYXNzPSJzdWItaGVhZGluZyI+U3RhdGVtZW50czwvcD4KPHAgY2xhc3M9InRleHQtcHJpbWFyeSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4oCiIFN0YXRlbWVudAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9wPgo8cD48L3A+PHAgY2xhc3M9InRleHQtcHJpbWFyeSI+VGhpcyBjZXJ0aWZpY2F0ZSBpcyBjb25zaXN0ZW50IHdpdGggdGhlIENhbGlicmF0aW9uIGFuZCBNZWFzdXJlbWVudCBDYXBhYmlsaXRpZXMgKENNQ3MpIHRoYXQgYXJlIGluY2x1ZGVkIGluIEFwcGVuZGl4IEMgb2YgdGhlIE11dHVhbCBSZWNvZ25pdGlvbiBBcnJhbmdlbWVudCAoTVJBKSBkcmF3biB1cCBieSB0aGUgSW50ZXJuYXRpb25hbCBDb21taXR0ZWUgZm9yIFdlaWdodHMgYW5kIE1lYXN1cmVzIChDSVBNKS4gVW5kZXIgdGhlIE1SQSwgYWxsIHBhcnRpY2lwYXRpbmcgaW5zdGl0dXRlcyByZWNvZ25pemUgdGhlIHZhbGlkaXR5IG9mIGVhY2ggb3RoZXLigJlzIGNhbGlicmF0aW9uIGFuZCBtZWFzdXJlbWVudCBjZXJ0aWZpY2F0ZXMgZm9yIHRoZSBxdWFudGl0aWVzLCByYW5nZXMgYW5kIG1lYXN1cmVtZW50IHVuY2VydGFpbnRpZXMgc3BlY2lmaWVkIGluIEFwcGVuZGl4IEMgKGZvciBkZXRhaWxzLCBzZWUgaHR0cDovL3d3dy5iaXBtLm9yZykuPC9wPjxwPjwvcD4KPHA+PC9wPgo8YnI+CjwvZGl2Pgo8cCBjbGFzcz0idG9wLWhlYWRpbmciPk1lYXN1cmVtZW50IFJlc3VsdHM8L3A+CjxkaXYgY2xhc3M9Im1lYXN1cmVtZW50UmVzdWx0Ij4KPHA+PC9wPjxkaXYgY2xhc3M9ImF2b2lkLWJyZWFrIG1iLWRlZmF1bHQiPjxwIGNsYXNzPSJzdWItaGVhZGluZyI+TWVhc3VyZW1lbnQgcmVzdWx0czwvcD48L2Rpdj48cD48L3A+CjxwIGNsYXNzPSJzdWItaGVhZGluZyI+CiAgICAgICAgICAgICAgICAgICAgICAgIFVzZWQgTWV0aG9kcwogICAgICAgICAgICAgICAgICAgIDwvcD4KPHAgY2xhc3M9InRleHQtcHJpbWFyeSI+CiAgICAgICAgICAgICAgICAgICAgICAgIOKAoiBVc2VkIG1ldGhvZAogICAgICAgICAgICAgICAgICAgIDwvcD4KPHAgY2xhc3M9InRleHQtcHJpbWFyeSI+Q2FsaWJyYXRpb24gb2YgdGVtcGVyYXR1cmUgc2Vuc29yczwvcD4KPGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0IGF2b2lkLWJyZWFrIj48L2Rpdj4KPGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0IGF2b2lkLWJyZWFrIj48L2Rpdj4KPHAgY2xhc3M9InN1Yi1oZWFkaW5nIj4KICAgICAgICAgICAgICAgICAgICAgICAgTWVhc3VyaW5nIEVxdWlwbWVudHMKICAgICAgICAgICAgICAgICAgICA8L3A+CjxwIGNsYXNzPSJ0ZXh0LXByaW1hcnkiPgogICAgICAgICAgICAgICAgICAgICAgICDigKIgTWVhc3VyaW5nIEVxdWlwbWVudAogICAgICAgICAgICAgICAgICAgIDwvcD5QdCAxMDAgdGhlcm1vbWV0ZXI8cCBjbGFzcz0iZGVzY3JpcHRpb24tc2Vjb25kYXJ5Ij48L3A+CjxwPklzc3VlciAoSWRlbnRpZmljYXRpb24pOiBtYW51ZmFjdHVyZXI8L3A+CjxwPlZhbHVlIChJZGVudGlmaWNhdGlvbik6IHJlZmVyZW5jZS1QVDEwMC0wMDI8L3A+Cjxicj48cCBjbGFzcz0ic3ViLWhlYWRpbmciPgogICAgICAgICAgICAgICAgICAgICAgICBSZXN1bHRzCiAgICAgICAgICAgICAgICAgICAgPC9wPgo8ZGl2IGNsYXNzPSJyZXN1bHQgYXZvaWQtYnJlYWsiPgo8ZGl2PjxkaXYgY2xhc3M9ImF2b2lkLWJyZWFrIG1iLWRlZmF1bHQiPjxwIGNsYXNzPSJzdWItaGVhZGluZyI+TWVhc3VyaW5nIHJlc3VsdHM8L3A+PC9kaXY+PC9kaXY+CjxkaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0IGF2b2lkLWJyZWFrIj48ZGl2IGNsYXNzPSJjb2wiPgo8ZGl2IGNsYXNzPSJjZWxsIj5SZWZlcmVuY2UgdmFsdWU8cCBjbGFzcz0iZGVzY3JpcHRpb24tc2Vjb25kYXJ5Ij48L3A+XGRlZ3JlZWNlbHNpdXM8L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+MzMuMDk4PC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjk5Ljk3MTwvZGl2Pgo8ZGl2IGNsYXNzPSJjZWxsIj4xNzUuMTAzPC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjI1MC4xNjk8L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+MzIwLjAwNDwvZGl2Pgo8L2Rpdj48L2Rpdj4KPGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0ICBhdm9pZC1icmVhayI+PGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0IGF2b2lkLWJyZWFrIj48L2Rpdj48L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IG1iLWRlZmF1bHQgYXZvaWQtYnJlYWsiPjxkaXYgY2xhc3M9ImNvbCI+CjxkaXYgY2xhc3M9ImNlbGwiPkluZGljYXRlZCBtZWFzdXJlZCB2YWx1ZSBwcm9iZTxwIGNsYXNzPSJkZXNjcmlwdGlvbi1zZWNvbmRhcnkiPjwvcD5cZGVncmVlY2Vsc2l1czwvZGl2Pgo8ZGl2IGNsYXNzPSJjZWxsIj4zMy4xNzwvZGl2Pgo8ZGl2IGNsYXNzPSJjZWxsIj4xMDAuMDY8L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+MTc1LjIxPC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjI1MC4xNjwvZGl2Pgo8ZGl2IGNsYXNzPSJjZWxsIj4zMTkuOTI8L2Rpdj4KPC9kaXY+PC9kaXY+CjxkaXYgY2xhc3M9ImZsZXggbWItZGVmYXVsdCAgYXZvaWQtYnJlYWsiPjxkaXYgY2xhc3M9ImZsZXggbWItZGVmYXVsdCBhdm9pZC1icmVhayI+PC9kaXY+PC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBtYi1kZWZhdWx0IGF2b2lkLWJyZWFrIj48ZGl2IGNsYXNzPSJjb2wiPgo8ZGl2IGNsYXNzPSJjZWxsIj5NZWFzdXJlbWVudCBlcnJvcjxwIGNsYXNzPSJkZXNjcmlwdGlvbi1zZWNvbmRhcnkiPjwvcD5ca2VsdmluPC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjAuMDcyPC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjAuMDg5PC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjAuMTA3PC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPi0wLjAwOTwvZGl2Pgo8ZGl2IGNsYXNzPSJjZWxsIj4tMC4wODQ8L2Rpdj4KPC9kaXY+PC9kaXY+CjxkaXYgY2xhc3M9ImZsZXggbWItZGVmYXVsdCAgYXZvaWQtYnJlYWsiPjxkaXYgY2xhc3M9ImZsZXggbWItZGVmYXVsdCBhdm9pZC1icmVhayI+CjxkaXYgY2xhc3M9ImNvbCI+CjxkaXYgY2xhc3M9ImNlbGwiPgo8cD5VbmNlcnRhaW50eSBMaXN0PC9wPlxrZWx2aW48L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+MC4wNjE8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbCI+CjxkaXYgY2xhc3M9ImNlbGwiPgo8cD5Db3ZlcmFnZSBGYWN0b3IgTGlzdDwvcD4KPGJyPgo8L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+MjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29sIj4KPGRpdiBjbGFzcz0iY2VsbCI+CjxwPkNvdmVyYWdlIFByb2JhYmlsaXR5IExpc3Q8L3A+Cjxicj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNlbGwiPjAuOTU8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbCI+CjxkaXYgY2xhc3M9ImNlbGwiPgo8cD5EaXN0cmlidXRpb24gTGlzdDwvcD4KPGJyPgo8L2Rpdj4KPGRpdiBjbGFzcz0iY2VsbCI+bm9ybWFsPC9kaXY+CjwvZGl2Pgo8L2Rpdj48L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjwvYm9keT48L2h0bWw+"
+	  }
+	}
+}
