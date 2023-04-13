@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dcc:digitalCalibrationCertificate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcc="https://ptb.de/dcc" xmlns:si="https://ptb.de/si" xsi:schemaLocation="https://ptb.de/dcc https://ptb.de/dcc/v3.2.0/dcc.xsd" schemaVersion="3.2.0">
+  
+  <!-- EMPIR DCC2GO Example, Copyright (c) 2022 - 2023 DCC2GO project members, https://www.ptb.de/dcc2go/project, contact dcc2go@ptb.de, DOI ...-->
+  <!-- This XML file is free data: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution 4.0 International License as published by the Creative Commons Corporation. -->
+  <!-- This XML is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  -->
+  <!-- You should have received a copy of the Commons Attribution 4.0 International License along with this XML.  If not, see https://creativecommons.org/licenses/by/4.0/. -->
+  
   <dcc:administrativeData>
     <dcc:dccSoftware>
       <dcc:software>
